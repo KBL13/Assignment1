@@ -1,0 +1,95 @@
+A. Repository https://github.com/KBL13/Assignment1.git
+
+B.   5  irlabuser
+     4  KBL13
+     2  Khoa
+     1  Javier Ricardo Escobar Avila
+I used the git shortlog -s -n.
+
+C. Khoas-MBP:Assignment1 khoale$ git log -p .gitignore
+commit f92fb2d5e5467d35f829f3f5ad65238887187e4c
+Author: Khoa <kbl13b@my.fsu.edu>
+Date:   Wed Oct 11 22:57:57 2017 -0400
+
+    Updated status.txt with git status output and untracked files.
+
+diff --git a/.gitignore b/.gitignore
+index 02c345f..d05117d 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -1,4 +1,5 @@
+ /.dep.inc
+ /Makefile
+ /nbproject/
+-/core
+\ No newline at end of file
++/core
++/Debug/
+
+commit a46d9263dfca5ecc9a803da298fcb3b2e229131f
+Author: irlabuser <irlabuser@irlabvm>
+Date:   Wed Sep 27 16:31:42 2017 -0500
+
+    Second version of the RoleGame prototype
+    
+    A new weapon was added (CommonSpear)
+    
+    Comments are finally real
+
+diff --git a/.gitignore b/.gitignore
+index 10dd16d..02c345f 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -1,3 +1,4 @@
+ /.dep.inc
+ /Makefile
+-/nbproject/
+\ No newline at end of file
++/nbproject/
++/core
+\ No newline at end of file
+
+commit e7831f68fb63e2047309691247cec975d9642c22
+Author: irlabuser <irlabuser@irlabvm>
+Date:   Wed Sep 27 16:03:55 2017 -0500
+
+    First version of the RoleGame prototype
+    
+    This first version includes de Weapon abstract class, the WeaponsFactory
+    and one of the necessary implementations (CommonSword).
+    
+    Comments are missing. Working on that now.
+
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..10dd16d
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1,3 @@
++/.dep.inc
++/Makefile
++/nbproject/
+\ No newline at end of file
+
+I tried using git diff .gitignored but it returned nothing.
+
+D. I tried using git diff --stat to show the IDs of the commits used to merge the changes but terminal
+but at this point I'm starting to suspect I was supposed to do all my commits and pushes in development
+to be merged later onto master.
+
+E. Two reasons for using branches in a Git repository is to support quality assurance/code quality/
+integration/testing proesses and to isolate developement activities among the team (branches for new features 
+vs branches for bug fixes).
+
+F. The difference is git log gets info about last commits and git status show the working tree status.
+
+G. The command to see commits where "Weapon.h" was one of the commited files would be git log --follow Weapon.h
+
+H. The command one woul use to see the commits whose commit message contains the word "file" would be
+git log --grep="file"
+
+I. Inheritance is when an object or class is based on another object using the same implementation. 
+Polymorphism refers to a programming language's ability to process objects differently depending on 
+their data type or class. Encapsulation is where a language construct that facilitates the bundling of data
+with the methods operating on that data.
+
