@@ -9,6 +9,7 @@
 class CrazyRandomSword : public Weapon {
 public:
 	int hitpointsTemp;
+	srand(time(NULL));
 	hitpointsTemp = rand() % 100 + 10;
     CrazyRandomSword() : Weapon("Crazy Random Sword", hitpointsTemp) {
     }
