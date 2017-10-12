@@ -2,3 +2,6 @@
 /Makefile
 /nbproject/
 /core
+/Debug/
+/.project
+/.cproject
