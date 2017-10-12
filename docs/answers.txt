@@ -93,3 +93,7 @@ Polymorphism refers to a programming language's ability to process objects diffe
 their data type or class. Encapsulation is where a language construct that facilitates the bundling of data
 with the methods operating on that data.
 
+7. The RoleGame prototype uses encapsulation because there is headroom for creating new weapons that fall under 
+weapons inheritance. And from there, there could be sub classes of each weapon like there could be an
+"iron common sword" that has special effects to it. Polymorphism is also implemented because we subtracted an int
+from a float/double.
